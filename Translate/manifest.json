@@ -1,0 +1,10 @@
+{
+"description": "百度划词翻译，自动识别语言，外语翻译成中文，中文则翻译成英语，结果显示在划词后的右键菜单上。", 
+"background": {"scripts": ["background.js"]}, 
+"content_scripts": [{"matches": ["<all_urls>"],"js": ["inject.js"],"all_frames":true}],
+"version": "0.9", 
+"manifest_version": 2, 
+"developer": {"name": "伤心凉粉"}, 
+"permissions": ["contextMenus","http://sensearch.baidu.com/sensearch/selecttext*"],
+"name": "百度划词翻译"
+}
