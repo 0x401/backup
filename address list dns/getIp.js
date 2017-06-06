@@ -6,7 +6,7 @@
 // ==/UserScript==
 
 $(function(){
-  $('#domain').change(function(){
+$(document).on('change','input#domain',function(){
      $.ajax({
         url:'http://172.16.1.2/ip.php',  
         dataType:'jsonp',
